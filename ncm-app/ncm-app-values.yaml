@@ -7,6 +7,8 @@ metadata: # kpt-merge: example/network-function-values
 apiVersion: v1
 data:
   values.yaml: |
+    nodeSelector: ""
+    tolerations: ""
     autonomous:
       enabled: true
     webhook:
