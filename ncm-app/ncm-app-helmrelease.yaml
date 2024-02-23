@@ -15,7 +15,7 @@ spec:
         namespace: default
       reconcileStrategy: Revision
       interval: 1m
-  targetNamespace: default # kpt-set: ${targetNamespace}
+  targetNamespace: profileop # kpt-set: ${targetNamespace}
   valuesFrom:
   - kind: ConfigMap
     name: ncm-app-values
