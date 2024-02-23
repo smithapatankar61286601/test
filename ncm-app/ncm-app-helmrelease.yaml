@@ -15,9 +15,8 @@ spec:
         name: helmrepo
       interval: 5m
   releaseName: ncm-app
-  install:
-    remediation:
-      retries: 3
-  upgrade:
-    remediation:
-      retries: 3
+  targetNamespace: default 
+  valuesFrom:
+  - kind: ConfigMap
+    name: ncm-app-values
+    valuesKey: values.yaml
