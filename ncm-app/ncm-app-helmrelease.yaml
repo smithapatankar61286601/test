@@ -4,9 +4,6 @@ metadata:
   name: ncm-app
   namespace: default
 spec:
-  kubeConfig:
-    secretRef:
-      name: target-kubeconfig # kpt-set: ${targetKubeconfig}
   interval: 1m
   chart:
     spec:
