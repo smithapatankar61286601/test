@@ -18,7 +18,7 @@ spec:
         namespace: default
       reconcileStrategy: Revision
       interval: 1m
-  targetNamespace: network-function-flux-a # kpt-set: ${targetNamespace}
+  targetNamespace: default # kpt-set: ${targetNamespace}
   valuesFrom:
   - kind: ConfigMap
     name: ncm-app-values
