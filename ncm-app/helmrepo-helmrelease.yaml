@@ -15,7 +15,7 @@ spec:
         namespace: default
       reconcileStrategy: Revision
       interval: 1m
-  targetNamespace: profileop # kpt-set: ${targetNamespace}
+  targetNamespace: profop # kpt-set: ${targetNamespace}
   valuesFrom:
   - kind: ConfigMap
     name: helmrepo-values
