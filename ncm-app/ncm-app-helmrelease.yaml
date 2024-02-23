@@ -4,18 +4,21 @@ metadata:
   name: ncm-app
   namespace: default
 spec:
-  interval: 10m
-  timeout: 5m
+  kubeConfig:
+    secretRef:
+      name: target-kubeconfig # kpt-set: ${targetKubeconfig}
+  interval: 1m
   chart:
     spec:
-      chart: ncm-app
+      chart: ./ncm-app/helmcharts/ncm-app-2.3.2.tgz  
       version: '2.3.2'
       sourceRef:
-        kind: HelmRepository
-        name: helmrepo
-      interval: 5m
-  releaseName: ncm-app
-  targetNamespace: default 
+        kind: GitRepository
+        name: ncm-app # kpt-set: ${gitreponame}
+        namespace: default
+      reconcileStrategy: Revision
+      interval: 1m
+  targetNamespace: network-function-flux-a # kpt-set: ${targetNamespace}
   valuesFrom:
   - kind: ConfigMap
     name: ncm-app-values
