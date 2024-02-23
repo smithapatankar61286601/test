@@ -4,6 +4,8 @@ metadata:
   name: helmrepo
   namespace: default
 spec:
+  dependsOn:
+  - name: ncm-app
   interval: 1m
   chart:
     spec:
