@@ -1,0 +1,16 @@
+kind: ConfigMap
+metadata: # kpt-merge: example/network-function-values
+  name: ncm-app-values
+  namespace: default
+  annotations:
+    internal.kpt.dev/upstream-identifier: '|ConfigMap|example|network-function-values'
+apiVersion: v1
+data:
+  values.yaml: |
+    autonomous:
+      enabled: true
+    webhook:
+      validate: false
+    controller: true
+    helm3Only: true
+    checkLabelling: false
