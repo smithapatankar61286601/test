@@ -1,0 +1,22 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: /network-function-flux-i
+  name: network-function-flux-i
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|network-function-flux-i'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/smithapatankar61286601/demo.git
+    directory: network-function
+    ref: main
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/smithapatankar61286601/demo.git
+    directory: network-function
+    ref: main
+    commit: 1a568b104bafab2a38d3e4b044983312ea468e9d
+info:
+  description: sample description
