@@ -4,7 +4,7 @@ metadata: # kpt-merge: /network-function-flux-ai
   name: network-function-flux-ai
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|network-function-flux-ai'
+    internal.kpt.dev/upstream-identifier: kpt.dev|Kptfile|default|network-function-flux-ai
 upstream:
   type: git
   git:
