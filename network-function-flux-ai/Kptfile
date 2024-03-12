@@ -4,20 +4,20 @@ metadata: # kpt-merge: /network-function-flux-ai
   name: network-function-flux-ai
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: kpt.dev|Kptfile|default|network-function-flux-ai
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|network-function-flux-ai'
 upstream:
   type: git
   git:
     repo: https://github.com/smithapatankar61286601/blueprints.git
     directory: network-function-flux
-    ref: network-function-flux/v2
+    ref: network-function-flux/v3
 upstreamLock:
   type: git
   git:
     repo: https://github.com/smithapatankar61286601/blueprints.git
     directory: network-function-flux
-    ref: network-function-flux/v2
-    commit: f99c3e519c0cd4ad3812ea90939b081b06b964e8
+    ref: network-function-flux/v3
+    commit: a75d596138cf51231991b6f4da16e18b6dfc3d39
 info:
   description: kpt package for deploying network-function helm charts via flux
 pipeline:

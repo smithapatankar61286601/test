@@ -8,7 +8,7 @@ metadata: # kpt-merge: default/network-function-ms1
 spec:
   kubeConfig:
     secretRef:
-      name: target-kubeconfig # kpt-set: ${targetKubeconfig}
+      name: target-kubeconfig # kpt-set: ${name}
   interval: 1m
   chart:
     spec:
