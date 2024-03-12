@@ -8,7 +8,7 @@ metadata: # kpt-merge: default/network-function-ms2
 spec:
   kubeConfig:
     secretRef:
-      name: target-kubeconfig
+      name: target-kubeconfig # kpt-set: ${targetKubeconfig}
   dependsOn:
   - name: network-function-ms1
   interval: 1m
@@ -22,7 +22,7 @@ spec:
         namespace: default
       reconcileStrategy: Revision
       interval: 1m
-  targetNamespace: example1
+  targetNamespace: example1 # kpt-set: ${targetNamespace}
   valuesFrom:
   - kind: ConfigMap
     name: network-function-values

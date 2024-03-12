@@ -10,14 +10,14 @@ upstream:
   git:
     repo: https://github.com/smithapatankar61286601/blueprints.git
     directory: network-function-flux
-    ref: network-function-flux/v1
+    ref: network-function-flux/v2
 upstreamLock:
   type: git
   git:
     repo: https://github.com/smithapatankar61286601/blueprints.git
     directory: network-function-flux
-    ref: network-function-flux/v1
-    commit: 8f8f95fbc7b4ab3ad212e36759869a92ed4948b5
+    ref: network-function-flux/v2
+    commit: f99c3e519c0cd4ad3812ea90939b081b06b964e8
 info:
   description: kpt package for deploying network-function helm charts via flux
 pipeline:
