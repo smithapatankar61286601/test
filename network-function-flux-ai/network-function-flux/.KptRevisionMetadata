@@ -1,8 +1,0 @@
-apiVersion: ""
-kind: KptRevisionMetadata
-metadata:
-  name: blueprints-6f528223533580e9f633f66ddf33d7ad2a22c3cd
-  namespace: demo
-  creationTimestamp: "2023-12-22T05:24:20Z"
-  resourceVersion: 02eebbc0af44d94a4a42434046523ae6dad1b8f0
-  uid: uid:network-function-flux:v1
